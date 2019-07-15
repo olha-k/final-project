@@ -109,7 +109,7 @@ h2:hover {
  cursor: pointer;
 }
 
-#carousel-caption {
+.carousel-item .carousel-caption {
   background-color: white;
   position: absolute;
   bottom: 0px;
