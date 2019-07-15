@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans|Russo+One&display=swap');
+
+* {
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, header, main, footer, nav, p {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+  padding: 0 80px;
+  font-family: 'PT Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#logo-container .logo {
+  margin-top: 10px;
+  font-family: 'Russo One', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  color: #1c1c1c;
+}
+
+.navbar {
+   background-color: white;
+   overflow: hidden;
+}
+
+.nav-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #1c1c1c;
+  opacity: 0.6;
+  transition: 0.3s;
+  margin-right: 15px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  opacity: 1;
+  font-weight: bold;
+  font-style: italic;
+  color: #1c1c1c;
+  font-weight: 900;
+  background-color: yellow;
+}
+
+.search-container {
+  display: flex;  
+}
+
+.search-container input[type=text] {
+  border: 1px solid #ccc;  
+}
+
+.search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-right: 16px;
+  background: white;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button :hover {
+  background-color: yellow;
+}
+
+@media (max-width: 600px) {
+  .search-container {
+    display: none;
+  }
+  main {
+    padding: 0;
+  }
+  .subscription-container {
+   width: 100%;
+   text-align: center;
+  }
+}
+
+.container-fluid {
+  margin-top: 15px;
+}
+
+.heading {
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  text-decoration: none;
+}
+
+h2:hover {
+ font-style: italic;
+ background-color: yellow;
+ cursor: pointer;
+}
+
+#carousel-caption {
+  background-color: white;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.carousel-caption .heading {
+  color: black;  
+}
+
+.carousel-caption a:hover{
+  text-decoration: none;
+  color: black;  
+}
+
+.row .col-md .card {
+  border: none;
+}
+
+.row {
+  margin-bottom: 50px;
+}
+
+.col-lg-4 {
+  margin-top: 15px;
+}
+.carousel-item img {
+   width: 100%;
+}
+
+.trending-stories {
+  overflow: auto;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.trending-stories .tr-news {
+  float: left;
+  margin-right: 10px;
+}
+
+.trending-stories a {
+  text-decoration: none;
+  color: black;
+  font-size: 19px;
+}
+
+.subscription-container {
+  padding:25px;
+  width: 300px;
+  -webkit-box-shadow: -24px 10px 0px 12px rgba(4,0,255,1);
+  -moz-box-shadow: -24px 10px 0px 12px rgba(4,0,255,1);
+  box-shadow: -24px 19px 0px 12px rgba(4,0,255,1);
+border: #1c1c1c 2px solid;
+}
+
+.subscription-container input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.subscription-container input[type=checkbox] {
+  margin-top: 16px;
+}
+.subscription-container input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.subscription-container input[type=submit]:hover {
+  background-color: yellow;
+  color: black;
+}
+
+#contact-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+
+#contact-form input[type=text], select, textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+#contact-form input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#contact-form input[type=submit]:hover {
+  background-color: yellow;
+  color: black;
+}
+
+footer {
+  text-align: center;
+}
