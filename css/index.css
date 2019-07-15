@@ -75,6 +75,7 @@ main {
   background-color: yellow;
 }
 
+
 @media (max-width: 600px) {
   .search-container {
     display: none;
@@ -82,6 +83,10 @@ main {
   main {
     padding: 0;
   }
+  .carousel-caption .heading {
+    font-size: 14px;
+  }
+
   .subscription-container {
    width: 100%;
    text-align: center;
@@ -213,4 +218,60 @@ border: #1c1c1c 2px solid;
 
 footer {
   text-align: center;
+}
+
+.col-sm-6 .badge {
+  cursor: pointer;
+}
+
+.col-sm-6 a {
+  text-decoration: none;
+  color: black;
+  margin-right:15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.col-sm-6 a:hover {
+  text-decoration: none;
+  color: black; 
+}
+
+.col-sm-6 {
+ margin-top: 10px;
+}
+
+.clock {
+  position: relative;
+  left: 60%;
+  transform: translateX(-50%) translateY(-50%);
+  color: rgba(4,0,255,1);
+  font-size: 50px;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 7px;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
 }
